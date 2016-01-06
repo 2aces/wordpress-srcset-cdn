@@ -15,7 +15,7 @@ This function uses the new wp_calculate_image_srcset filter to force Wordpress t
 
 Desde a versão 4.4, o Wordpress suporta imagens responsiva usando uma lista de arquivos diferentes no atributo srcset do elemento img. O browser compara esta lista com o tamanho da tela e escolhe a que melhor se adequa, invés do arquivo indicado no atributo src tradicional.
 
-Mas quando você uma CDN para suas imagens e reescreve a referência das URLs no HTML usando a CDN automática na WPEngine ou plugins como~~ o [Autoptimize](https://wordpress.org/plugins/autoptimize/) ou~~ o WP CDN Rewrite, as URLs das imagens não serão alteradas para o (sub)domínio de sua CDN.
+Mas quando você uma CDN para suas imagens e reescreve a referência das URLs no HTML usando a CDN automática na WPEngine ou plugins como o WP CDN Rewrite, as URLs das imagens não serão alteradas para o (sub)domínio de sua CDN.
 
 Esta função usa o novo filtro wp_calculate_image_srcset para forçar a reescrita das urls. Não estamos seguros de que esta é aforma mais correta e eficiente de fazê-lo, então, você é mais que bem-vindo para testar e contribuir com uma solução melhor.
 
