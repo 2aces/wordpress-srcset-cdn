@@ -7,7 +7,7 @@
 
 Since version 4.4, Wordpress has support for responsive images using a list of different files on srcset attributes on img element. The browser checks this list against the UA width and UA type and chose the best fitting one, instead de the one on the common src attribute
 
-But IF you you use a CDN to serve your images and rewrites URLs on source HTMLs using WPEngine CDN automatic url rewrite or plugins like [Futta's Autoptimize](http://blog.futtta.be/autoptimize/) or [WP CDN Rewrite](https://wordpress.org/plugins/wp-cdn-rewrite/), those image URLs on srcset won't be rewritten to use your CDN (sub)domain.
+But IF you you use a CDN to serve your images and rewrites URLs on source HTMLs using WPEngine CDN automatic url rewrite or plugins like [Futta's Autoptimize](http://blog.futtta.be/autoptimize/) (@futta) or [WP CDN Rewrite](https://wordpress.org/plugins/wp-cdn-rewrite/), those image URLs on srcset won't be rewritten to use your CDN (sub)domain.
 
 This function uses the new wp_calculate_image_srcset filter to force Wordpress to use CDN subdomains on srcset list. We're not sure this is the proper of most efficiente way of doing it, so, you are more than welcome to give a try, test it and contributing making pull request with a better solution.
 
