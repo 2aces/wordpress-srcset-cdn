@@ -22,4 +22,5 @@ function aafd_cdn_srcset($sources){
 	}
 	return $sources;
 }
+add_filter( 'wp_calculate_image_srcset', 'aafd_cdn_srcset');
 ?>
